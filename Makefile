@@ -5,9 +5,9 @@ REPORTER = dot
 TESTS_SERVER = ./serverTest/
 
 test-server:
-	@$(MOCHA) -r should -t 5000 --reporter $(REPORTER) $(TESTS_SERVER)
+	$(MOCHA) -r should -t 5000 --reporter $(REPORTER) $(TESTS_SERVER)
 
 readme:
-	@make test-server REPORTER=markdown | cat header.md - > readme.md
+	make test-server -s REPORTER=markdown | cat header.md - > readme.md
 
 .PHONY: test-server readme

@@ -24,7 +24,6 @@ Fotostrana.ru API
 
 ## Методы
 
-make[1]: Entering directory `/home/user/projects/fotostrana-api'
 # TOC
    - [signup](#signup)
      - [#init()](#signup-init)
@@ -132,4 +131,3 @@ return authPromise.then(function (authInfo) {
 });
 ```
 
-make[1]: Leaving directory `/home/user/projects/fotostrana-api'
